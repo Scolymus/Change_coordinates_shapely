@@ -135,7 +135,7 @@ def draw_only_boxes_lines(dst):
         cv2.polylines(dst,[pts],True,(0,0,255))
 
     if ind_cell > -1 and ind_cell < len(all_boxes):
-        pts = cells_unit[g.ind_cell]
+        pts = cells_unit[ind_cell]
         pts = pts.reshape((-1,1,2))
         cv2.polylines(dst,[pts],True,(128,128,0))
 
